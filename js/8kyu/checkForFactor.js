@@ -1,19 +1,18 @@
-// Count the number of divisors of a positive integer n.
+// This function should test if the factor is a factor of base.
 
-// Random tests go up to n = 500000.
+// Return true if it is a factor or false if it is not.
 
-// Examples (input --> output)
-// 4 --> 3 (1, 2, 4)
-// 5 --> 2 (1, 5)
-// 12 --> 6 (1, 2, 3, 4, 6, 12)
-// 30 --> 8 (1, 2, 3, 5, 6, 10, 15, 30)
+// About factors
+// Factors are numbers you can multiply together to get another number.
 
-// Note you should only return a number, the count of divisors. 
-// The numbers between parentheses are shown only for you to see which numbers are 
-// counted in each case.
+// 2 and 3 are factors of 6 because: 2 * 3 = 6
 
-function getDivisorsCnt(n){
-    console.log("Test terminal")
-}
+// You can find a factor by dividing numbers. If the remainder is 0 then the number is a factor.
+// You can use the mod operator (%) in most languages to check for a remainder
+// For example 2 is not a factor of 7 because: 7 % 2 = 1
 
-getDivisorsCnt()
+// Note: base is a non-negative number, factor is a positive number.
+
+function checkForFactor (base, factor) {
+    return base % factor === 0 ? true : false
+  }
